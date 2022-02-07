@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- salvar como DOM-p6.html -->
+<html lang="pt-br">
+	<head>
+		<title>DOM – Parágrafo e spans</title>
+		<meta charset="utf-8">
+		<style>
+		  p { color  : black ;}
+		  #span1 {color : blue ;}
+		  #span2 {color : red ;}
+		  #span3 {color : green;}
+		</style>
+    <script src="DOM-p6.js"></script>
+	</head>
+	<body>
+		<p>A raposa <span id="span1">descansava</span> 
+			<span id="span2">à beira da 
+			lagoa</span> quando 
+			<span id="span3">escutou o latido de cães</span>.
+		</p>
+    <h2>AÇÕES DA RAPOSA</h2>
+		<select onchange="mudarAcao(this)" >
+		   <option>descansava</option>
+		   <option>escondia-se</option>
+		   <option>observava</option>
+		   <option>espreitava</option>
+		   <option>espreguiçava-se</option>
+		</select>
+    <br><br><br>
+		<b>Em que local? </b> <br>
+		<input type="text" id="local" size="50"
+			   placeholder="Digite o local aqui">
+		
+		<input type ="button" value="Alterar Local" onclick="alterarLocal()">
+		<hr>
+    <h2>Parágrafos prontos (passe o mouse)</h2>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">escutou o latido de cães</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">percebeu o grasnar de aves</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">ouviu o chamado de seu dono</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">sentiu a chuva chegando</p>
+	</body>
+</html>

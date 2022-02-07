@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+		<title>Sistema Gerencial – Localização de Cliente</title>
+	</head>
+	<body>
+		<h1>Localização de Cliente</h1>
+		<hr>
+		<form 	action="localizaCliente.php"
+				method="post">
+			Nome:
+			<input type="text" name="nome">
+			
+			UF:
+			<select name="UF">
+				<option value="">Selecione</option>
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espirito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</select>
+			
+			DDD:
+			<input type="text" name="ddd" maxlength="2" size="5">
+			
+			Telefone:
+			<input type="text" name="telefone" maxlength="11" size="12">
+			
+			Situação Financeira:
+			<input type="radio" name="situacao" checked> Todos
+			<input type="radio" name="situacao" value="D"> Devedores
+			<input type="radio" name="situacao" value="C"> Credores
+			<hr>
+			<input type="submit" value="Localizar">
+		</form>
+		
+	</body>
+</html>

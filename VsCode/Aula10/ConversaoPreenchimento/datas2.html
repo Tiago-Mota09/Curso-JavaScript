@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- salvar como datas2.html -->
+<html lang="pt-br">
+	<head>
+		<title>Manipulação de datas em JavaScript</title>
+		<meta charset="utf-8">
+		<script src="../datas.js"></script>
+	</head>
+	<body>
+	<script>
+		var data = new Date(2021,5,8,5,4,3,10)
+		MostraData(data)
+		
+		var dia = data.getDate().toString() // mudou de 8 para "8"
+		console.log(dia)
+		
+		var mes = (data.getMonth()+1).toString()
+		console.log(mes)
+		
+		var ano = data.getFullYear()//será o unico número
+		console.log(ano)
+		
+		var horas = data.getHours().toString()
+		var minutos= data.getMinutes().toString()
+		console.log(minutos)
+		
+		var segundos= data.getSeconds().toString()
+		console.log(segundos)
+		
+		var milisegundos= data.getMilliseconds().toString()
+		console.log(milisegundos)
+		
+		MostraData("A data é " + dia.padStart(2,"0") + "/" + //para preencher com 2 digitos e 0 antes 
+                             mes.padStart(2,"0") + "/" + 
+                             ano )
+
+    MostraData("Hora atual é " + horas.padStart(2,"0")   + ":" + 
+									           minutos.padStart(2,"0")     + ":" +
+									           segundos.padStart(2,"0")    + ":" +
+									           milissegundos.padStart(3,"0"))
+	</script>
+	</body>
+</html>

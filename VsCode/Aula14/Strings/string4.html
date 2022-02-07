@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Manipulação de Strings - JavaScript</title>
+    <script src="string4.js"></script>
+    <link rel="stylesheet" type="text/css" href="string4.css">
+    <meta charset="utf-8">
+</head>
+
+<body onload="herois.focus()">
+    <div id="conteiner">
+        <h2>Teste de Conhecimento</h2>
+        Informe o nome, em português, dos seis herois mais poderosos do universo Marvel:
+        <br><br>
+        <textarea id="herois" placeholder="De preferência, um por linha" rows="6" cols="80"></textarea>
+        <hr>
+        <input type="button" value="Conferir" onclick="heroisMC(herois.value)">
+        <span id="resultado"></span>
+    </div>
+</body>
+
+</html>

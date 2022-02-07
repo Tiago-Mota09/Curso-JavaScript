@@ -1,0 +1,11 @@
+/* expressao7.css */
+
+.erro {
+  border: 1px solid red;
+  background-color: pink;
+}
+
+.campos {
+  border: 1px solid green;
+  background-color: white;
+}

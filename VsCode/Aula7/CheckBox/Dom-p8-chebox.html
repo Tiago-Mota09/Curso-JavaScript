@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- salvar como DOM-p8.html -->
+<html lang="pt-br">
+	<head>
+		<title>Cadastro de Interessado</title>
+		<meta charset="utf-8">
+		<script src="DOM-p8.js"></script>
+		<style>
+		  #areaEmail { display :none; }
+		</style>
+	</head>
+	<body>
+		<h1>CADASTRO DE INTERESSADO</h1>
+		<b>Nome:</b> <br>
+		<input 	type="text" id="nome" name="nome" size="50"
+				placeholder="Digite o nome aqui"> <br>
+
+		<b>Telefone:</b> <br>
+		<input 	type="tel" id="telefone" name="telefone" size="16"
+				placeholder="(99) 9.9999-9999"> <br>
+
+		<input 	type="checkbox" 
+				id="querEmails" 
+				name="querEmails" 
+				onclick="areaEmail(this.checked)">Desejo receber e-mails. <br>
+		<div id="areaEmail">
+			 <input type="email" id="email" name="email" size="100"
+					placeholder="Informe um e-mail válido">
+		</div>
+    </body>
+</html>

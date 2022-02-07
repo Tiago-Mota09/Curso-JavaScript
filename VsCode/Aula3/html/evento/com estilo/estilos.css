@@ -1,0 +1,35 @@
+/* salvar como estilos.css */
+body {
+	background:url(https://cdn.pixabay.com/photo/2018/12/23/21/48/new-years-eve-3891889_960_720.jpg);
+	background-size:cover;
+	font-family: 'Dancing Script', cursive;
+	font-size:40px; 
+}
+
+.campos { color: navy;
+	background-color:beige;
+	text-align:right;
+	width:250px;
+	font-family: 'Slabo 27px', serif;
+	font-size:40px; 
+}
+.botao { 	color:navy;
+	font-family: 'Slabo 27px', serif;
+	font-size:40px; 
+}
+#areaContas { margin:50px;
+	background-color:white;
+	width:650px;
+	border:3px solid blue;
+	border-radius:10%;
+	padding:20px; 
+	margin:50px auto;
+}
+label {
+	width:200px;
+	display:block; 
+	float:left; 
+}
+.total {
+	background-color:silver;
+}

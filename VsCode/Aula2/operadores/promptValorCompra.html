@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+    	<meta charset="utf-8">
+	<title>Valor da Compra 2</title>
+   </head>
+   <body>
+	<script>
+		var preco = 25.14, quantidade
+	   
+		quantidade = prompt("Informe a quantidade desejada" , "1")
+	   
+		// validar  - verificar se foi digitado um número
+		if ( isNaN(quantidade) )
+		{
+			alert("Informe um número válido")
+		}
+		else
+		{
+			var total = preco * quantidade
+			document.write("O valor total da compra é " + total.toFixed(2) )	   
+		}
+
+	</script>
+</body>
+</html>

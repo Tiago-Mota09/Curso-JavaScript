@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  background: url(https://cdn.pixabay.com/photo/2016/11/02/15/44/swan-1791994_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 23px;
+padding:10px;
+}
+
+#conto {
+  width: 70%;
+  height: 600px;
+  overflow: auto;
+  border: 2px groove brown;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+input { background-color:lightblue;}

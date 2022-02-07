@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <title>Calculadora do Marcos</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+ </head>
+ <body>
+ <div class="corpo">
+   <h1>Calculadora</h1>
+   <hr>
+   <div class="entrada">
+  Numero 1:<input id="num1" type="number"> <br />
+  Numero 2:<input id="num2" type="number"> <br />
+</div>
+  <div class="radius">
+ <input type="radio" name="calc" id="soma"/> Soma
+ <input type="radio" name="calc" id="subtracao"/> Subtração
+ <input type="radio" name="calc" id="multiplicacao"/> Multiplicação
+ <input type="radio" name="calc" id="divisao"/> Divisão
+</div>
+<button onclick="main()" class="botao">Calcular</button><br />
+Resposta: <div id="resp" class="res"></div>
+</div>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Inserção na matriz</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h2>Funcionários do Setor</h2>
+		<script>
+			  listaNomes = []
+			  do {
+				   var nome = prompt("Informe um nome")
+
+				   if (nome !="") { listaNomes [listaNomes.length + 1] = nome }
+					 
+				} while (nome !="")
+
+						  listaNomes.sort()
+						  listaNomes.reverse()
+
+				for (var n=0 ; n < listaNomes.length ; n++) {
+				   
+				   document.write(listaNomes[n] + "<br>")
+				}
+		</script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html> <!-- salvar como eventos.html -->
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Controle de Custos de Eventos</title>
+		<script src="eventos.js"></script>
+	</head>
+	
+	<body>
+		<div id="areaContas">
+			<h2>Controle de Eventos</h2>
+			<label for="pessoal">Pessoal</label> 
+			<input type="number" id="pessoal" min="0"> <br>
+			
+			<label for="comidas">Comidas</label>  
+			<input type="number" id="comidas" min="0"> <br>
+			
+			<label for="bebidas">Bebidas</label>  
+			<input type="number" id="bebidas" min="0"> <br>
+			
+			<label for="locacao">Locação</label>  
+			<input type="number" id="locacao" min="0"> <br>
+			
+			<label for="outros">Outros</label>   
+			<input type="number" id="outros"  min="0">
+			
+			<hr>
+			<label>Total:</label> 
+			<input type="number" id="total" readonly>
+			<hr>
+			<input type="submit" value="Calcular" onclick="Calcular()">
+		</div>
+	</body>
+</html>

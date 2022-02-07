@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- salvar como DOM-p9.html -->
+<html lang="pt-br">
+	<head>
+		<title>ASSISTÊNCIA TÉCNICA MULTI-HARDWARE</title>
+		<meta charset="utf-8">
+		<script src="DOM-p9.js"></script>
+		<link rel="stylesheet" type="text/css" href="DOM-p9.css">
+	</head>
+	<body>
+		<div id="areaApp">
+		   <h2>ASSISTÊNCIA TÉCNICA – Armazenamento</h2>
+		   <b>Escolha a seguir o tipo de dispositivo de armazenamento para Conserto:</b> <br>
+		   <input type="radio" id="tipoHD" name="tipoHD" value="I"   onchange="MostraOpcoes('areaHDI')" checked> HD Interno
+		   <input type="radio" id="tipoHD" name="tipoHD" value="E"   onchange="MostraOpcoes('areaHDE')"> HD Externo
+		   <input type="radio" id="tipoHD" name="tipoHD" value="SSD" onchange="MostraOpcoes('areaSSD')"> SSD
+		   <hr>
+
+		   <div id="areaHDI">
+				<input type="radio" id="hdEescolhido1" name="hdEescolhido" value="WD10EZEX">HD WD Blue, 1TB, 3.5, SATA <br>
+        <input type="radio" id="hdEescolhido2" name="hdEescolhido" value="WD10EZE2">HD Seagate BarraCuda, 2TB, 3.5, SATA <br>
+				<input type="radio" id="hdEescolhido3" name="hdEescolhido" value="WD10EZE3"> HD WD Blue, 4TB, 3.5, SATA <br>
+		   </div>
+		   <div id="areaHDE">
+				<input type="radio" id="hdEescolhido4" name="hdEescolhido" value="WDBUZG0010BBK">HD WD Externo Elements USB 3.0 1TB <br>
+				
+				<input type="radio" id="hdEescolhido6" name="hdEescolhido" value="WDBU6Y0040BBK">HD Externo WD, 4TB, USB 3.0 <br>
+				   </div>
+		   <div id="areaSSD">
+			 <input type="radio" id="hdEescolhido4" name="hdEescolhido" value="SA400S37/480G">SSD Kingston A400, 480GB, R500MB/s, W450MB/s <br>
+			 <input type="radio" id="hdEescolhido5" name="hdEescolhido" value="SA400S37/960G">SSD Kingston A400, 960GB, R500MB/s, W450MB/s <br>
+			
+			 <input type="radio" id="hdEescolhido6" name="hdEescolhido" value="GP-GSTFS31256GTND">SSD Gigabyte, 256GB, R520Mb/s W500Mb/s <br>
+				   </div>
+		   <hr>
+		   Informe número da NF:
+		   <input type="text" id="NF" name="NF" maxlength="10"> <br>
+
+		   Informe data da NF (Compra):
+		   <input type="date" id="dataNF" name=" dataNF"> 
+		</div>
+    </body>
+</html>        

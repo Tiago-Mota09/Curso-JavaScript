@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!-- salvar como expressao7.html -->
+<html lang="pt-br">
+	<head>
+		<title>Dados do cliente</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="expressao7.css">
+		<script src="expressao7.js"></script>
+	</head>
+	<body>
+		<form action="verifica.php" method="post" onsubmit="return Validar()">
+			Informe o CEP da empresa:
+			<input 	type="text" name="cep" id="cep" class="campos"
+					placeholder="99999-999" maxlength="9"> <br>
+			Informe o CNPJ da empresa:
+			<input 	type="text" name="cnpj" id="cnpj" class="campos"
+					placeholder="99.999.999/9999-99" maxlength="18"> <br>
+			Informe o CPF do responsável:
+			<input 	type="text" name="cpf" id="cpf" class="campos"
+					placeholder="999.999.999-99" maxlength="14">
+			<br>
+			<input type="submit" value="Validar">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+		<title>Escopo de Constante</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			g1 = 18
+			var g2 = 40
+			X()
+			Y()
+			   document.write(	 "g1= "+ g1+
+								" g2= "+ g2+
+								" g3= "+ g3+
+								" g4= "+ g4)
+
+			
+			function X() {
+			   g3 = g2 - g1
+			   Y()
+			}
+			
+			function Y() {
+			   g4 = g3 + g1
+			}
+
+		</script>
+	</body>
+</html>

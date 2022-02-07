@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+	<title>Formatação de número</title>
+ 	<meta charset="utf-8">
+ 	<script src="formataMoeda.js"></script>
+   </head>
+   <body>
+	<script>
+	var numero=15240.79
+	numeroFormatado =  Intl.NumberFormat().format(numero)
+	document.write("Padrão local:" + numeroFormatado + "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(numero)
+	document.write("Brasil - Real:" + numeroFormatado + "<br>")
+
+	numeroFormatado = Intl.NumberFormat('hr-HR', { style: 'currency', currency: 'HRK' }).format(numero)
+	document.write("Croácia - Kuna: " + numeroFormatado + "<br>")
+
+	numeroFormatado = Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(numero)
+	document.write("Itália - Euro: " + numeroFormatado +  "<br>")
+
+	numeroFormatado = Intl.NumberFormat('de-ch', { style: 'currency', currency: 'EUR' }).format(numero)
+	document.write("Suiça - Euro: " + numeroFormatado +  "<br>")
+
+	numeroFormatado = Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY' }).format(numero)
+	document.write("Japão - Yen: " + numeroFormatado +  "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS' }).format(numero)
+	document.write("Argentina - Peso: " + numeroFormatado + "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('ar-SA', {  currencyDisplay: 'name' }).format(numero)
+	document.write("Arábia Saudita - Rial: " + numeroFormatado + "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('arabext', { style: 'currency', currency: 'SAR' }).format(numero)
+	document.write("Arábia Saudita - Rial: " + numeroFormatado + "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB' }).format(numero)
+	document.write("Rússia - Rublo: " + numeroFormatado +  "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' }).format(numero)
+	document.write("Turquia - Lira turca: " + numeroFormatado + "<br>")
+			
+	numeroFormatado = Intl.NumberFormat('he-IL', { style: 'currency', currency: 'ILS' }).format(numero)
+	document.write("Israel - Novo Shekel: " + numeroFormatado +  "<br>")
+	</script> 
+	</body>
+</html>
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html> <!-- salvar como roupas.html -->
+<html lang="pt-br">
+   <head>
+		<title>Loja de Roupas – Pedido de Vendas</title>
+		<meta charset="utf-8">
+		<script src="js/roupas.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/roupas.css">
+	</head>
+	<body>
+		<div id="principal">
+			<h2>Pedido de Vendas - Loja de Roupas</h2>
+			<hr>
+			
+			<!-- Área do Menu -->
+			<div id="menu">
+				<button id="btn1" class="botaoAceso" onclick="mostraArea(this, 'areaItens')">1. Itens</button>
+				<button id="btn2" onclick="mostraArea(this, 'areaCliente')">2. Dados Cliente</button>
+				<button id="btn3" onclick="mostraArea(this, 'areaEntrega'); valida('areaCliente')">3. Entrega</button>
+				<button id="btn4" onclick="mostraArea(this, 'areaPagamento')">4. Pagamento</button>
+			</div>
+			<hr>
+			
+			<div id="areaItens">
+				<label>Data de criação:</label>
+				<label><input type="date" id="dataCriacao" name="dataCriacao"></label>
+				
+				<label>Canal de venda:</label>
+				<input type="radio" name="canalVenda" value="S" checked>Site 
+				<input type="radio" name="canalVenda" value="L">Loja
+				<input type="radio" name="canalVenda" value="R">Representante<br>
+
+				
+				<label>Situação:</label>
+				<label>
+					<select id="situacao" name="situacao">
+						<option value="N">Novo</option>
+						<option value="C">Cancelado</option>
+						<option value="S">Em Separação</option>
+					</select>
+				</label>
+
+				<label>Loja:</label>
+				<select id="loja" name="loja">
+					<option value="1">1 - Central</option>
+					<option value="2">2 - Centro</option>
+					<option value="3">3 - Shopping Leste</option>
+				</select>
+				<br>
+				
+				<label>Vendedor:</label>
+				<label><input type="text" id="vendedor" maxlength="50" name="vendedor"></label>
+				
+				<label>Gerente:</label>
+				<label><input type="text" id="vendedor" maxlength="50" name="vendedor"></label>
+				<br><br>
+
+				<label>Observações</label><br>
+				<textarea name="obs" id="obs" rows="5" cols="100"></textarea>
+				<hr>
+				
+				<table border="1">
+					<tr class="titTabela">
+						<th colspan="2">Produto</th>
+						<th class="titDireita">Preço Unitário</th>
+						<th>Quantidade</th>
+						<th class="titDireita">Total</th>
+						<th>Extra (opcional)</th>
+					</tr>
+					
+					<tr>
+						<th>1</th>
+						<td>
+							<select id="produto1" name="produto1">
+								<option value="">Escolha</option>
+								<option value="85.70">Blusa Manga Curta</option>
+								<option value="122.00">Blusa Tomara que Caia</option>
+								<option value="95.00">Blusa Manga Larga</option>
+							</select>						
+						</td>
+						<td>
+							<input 	type="text" 
+									id="prProduto1" 
+									class="numero" 
+									value="0,00" 
+									readonly>
+						</td>
+						<td>
+							<input 	type="number" 
+									id="qtdProduto1" 
+									name="qtdProduto1"
+									maxlength ="2" 
+									class="quantidade"
+									value="0" 
+									min="0" 
+									max="99">
+						</td>
+						<td>
+							<input 	type="text" 
+									id="somaProduto1" 
+									class="numero" 
+									value="0,00"
+									readonly>
+						</td>
+						<td>
+							<input 	type="checkbox" 
+									id="embProduto1" 
+									name="embProduto1"> Embalar para presente
+									<span class="atencao">*</span>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>2</th>
+						<td>
+							<select id ="produto2" name="produto2" >
+								<option value="">Escolha</option>
+								<option value="85.70">Blusa Manga Curta</option>
+								<option value="122.00">Blusa Tomara que Caia</option>
+								<option value="95.00">Blusa Manga Larga</option>
+							</select>
+						</td>
+
+						<td> <input type="text" id="prProduto2" class="numero" value="0,00"> </td>
+
+						<td>
+							<input 	type="number" id="qtdProduto2" name="qtdProduto2" 
+									maxlength ="2" class="quantidade"
+									value="0" min="0" max="99">
+						</td>
+
+						<td> <input type="text" id="somaProduto2" class="numero" value="0,00"> </td>
+
+						<td> 
+							<input 	type="checkbox" 
+									id="embProduto2" 
+									name="embProduto2"> Embalar para presente
+									<span class="atencao">*</span>
+						</td>						
+					</tr>
+					
+					<tr>
+						<th>3</th>
+						<td>
+							<select id ="produto3" name="produto3">
+								<option value="">Escolha</option>
+								<option value="85.70">Blusa Manga Curta</option>
+								<option value="122.00">Blusa Tomara que Caia</option>
+								<option value="95.00">Blusa Manga Larga</option>
+							</select>
+						</td>
+
+						<td> <input type="text" id="prProduto3" class="numero" value="0,00"> </td>
+
+						<td>
+							<input 	type="number" id="qtdProduto3" name="qtdProduto3" 
+									maxlength ="2" class="quantidade"
+									value="0" min="0" max="99">
+						</td>
+
+						<td> <input type="text" id="somaProduto3" class="numero" value="0,00"> </td>
+
+						<td> 
+							<input 	type="checkbox" 
+									id="embProduto3" 
+									name="embProduto3"> Embalar para presente
+									<span class="atencao">*</span>
+						</td>					
+					</tr>
+				</table>
+			</div>
+			
+			<hr>
+			<div class='linha'>
+				<div class='coluna'>
+					<b>Valor estimado do Pedido: <span id="valorEstimadoPedido">R$ 520,12</span></b>
+				</div>
+				<div class='coluna'>
+					<span class="atencao" id="msgEmbalagem">* R$ 10,00 p/ embalagem. Valor de R$ 25,00 caso passe de 2 embalagens</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	

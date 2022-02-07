@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>DOM e Área de Texto</title>
+		<meta charset="utf-8">
+		<script src="selecao.js"></script>
+		<style>#contagem{background-color:pink;}</style>
+	</head>
+	<body>
+    <form action="">
+		<select name="vagaSelecionada" 
+				id="vagaSelecionada" 
+				form="frmRH" 
+				required>
+		
+				<optgroup label="Direção" disabled>
+					<option value="DA">Administração</option>
+					<option value="DF">Financeiro</option>
+					<option value="DC">Comercial</option>
+				</optgroup>
+
+				<optgroup label="Gestão">
+					<option value="GG">Gerente</option>
+					<option value="GC" disabled>Chefia</option>
+				</optgroup>
+
+				<optgroup label="Chão de Fábrica">
+					<option value="CC">Coordenação</option>
+					<option value="CL">Liderança</option>
+					<option value="CO"selected>Operador</option>
+				</optgroup>
+
+		</select>
+    </form>
+	</body>
+</html>

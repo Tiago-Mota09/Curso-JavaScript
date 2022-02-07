@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- salvar como randomico2.html -->
+<html lang="pt-br">
+	<head>
+		<title>Números aleatórios</title>
+		<meta charset="utf-8">
+		<script src="randomico2.js"></script>
+    <link rel="stylesheet" href="randomico2.css">
+	</head>
+	<body>
+    <div class="corpo">
+		Informe o valor mínimo:
+		<input type="number" id="minimo" size="5"><br>
+
+		Informe o valor máximo:
+		<input type="number" id="maximo" size="5"><br>
+		
+		<input class="buttom"	type ="button" 
+			value="Gerar número aleatório" 
+			onclick="divResultado.innerHTML = aleatorio(minimo.value , maximo.value)">
+		<hr>
+	
+Resultado:
+		<div id="divResultado"></div>
+  </div>
+	</body>
+</html>

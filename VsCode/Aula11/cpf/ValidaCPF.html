@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+	<title>Validação de CPF</title>
+ 	<meta charset="utf-8">
+ 	<script src="corporativo.js"></script>
+	<style>
+	  .caixa {border:1px solid navy;background-color:white; }
+	  .erro  {border:1px solid red; background-color:pink; }
+	</style>
+   </head>
+
+   <body>
+      Digite um CPF:
+      <input type="text" id="cpf" class="caixa" maxlength="14">
+      <span id="resultado"></span>
+      <br>
+      <input type="button" onclick="Validacao()" value="Validar CPF">
+
+   </body>
+</html>

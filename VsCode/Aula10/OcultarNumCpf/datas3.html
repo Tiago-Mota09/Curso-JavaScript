@@ -1,0 +1,23 @@
+<!DOCTYPE html> <!-- salvar como datas3.html -->
+<html lang="pt-br">
+	<head>
+	<title>Manipulação de datas em JavaScript</title>
+ 	<meta charset="utf-8">
+ 	<script src="../datas.js"></script>
+	</head>
+	<body>
+	<script>
+    /*
+      mostrar algo assim
+      0.12.345.678-90
+      **********78-90
+    */
+	var cpf = "012.345.678-90"
+  var final = cpf.substr(9,5)//das 9 casas mostrará as últimas 5 //variavel final esta  valendo 78-90
+  alert (final)
+
+  document.write(final.padStart(14, "*"))// 14 * antes dos números mostrados
+
+	</script>
+	</body>
+</html>

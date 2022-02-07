@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>IMC</title>
+    <script src="ExEvento.js"></script>
+    <link rel="stylesheet" href="imc.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href= "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Slabo+13px&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="imc.js"></script>
+</head>
+<body>
+    <!-- <div class="corpo">
+        <h1>Cálculo do IMC</h1>
+        <label for=" Peso:">Peso (kgs):</label>
+        <input type="number" id="pes" min="0" maxlength="2" value="" class="pes"><br>
+
+        <label for=" Altura:">Altura (MTs):</label>
+        <input type="number" id="alt" min="0" maxlength="2" value="" class="alt"><br> 
+       
+        <input type="button" value="Calcular" onclick="Calcular()" class="calc"><br>
+
+        <hr> IMC: <input type="number" id="imc" class="imc" readonly> <br>
+
+        Situação: <input type="text" id="sit" class="sit" readonly>
+       
+    </div> -->
+    <div class="corpo">
+        <h1>Cálculo do IMC</h1>
+        <label for=" Peso:">Peso:</label>
+        <input type="number" placeholder="52,2" id="pes" min="0" maxlength="2" value="" class="pes"><br>
+        <label for=" Altura:">Altura:</label>
+        <input type="number" placeholder="1,81" id="alt" min="0" maxlength="2" value="" class="alt">
+        <input type="button" value="Calcular" onclick="Imc()" class="calc"><br>
+        <hr>
+        <label for="IMC">IMC:</label>
+        <input type="number" id="imc" class="imc" readonly><br>
+        
+        <label for="Sit">Situação:</label>
+        <input type="text" id="sit" class="sit" readonly>
+    
+    </div>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cálculo do IMC</title>
+		<meta charset="utf-8">
+		<style>
+			label { 
+				width:150px;
+				float:left;
+			}
+			h1, p {color:navy;}
+			input {text-align:right; color:navy;}
+			body { 
+				background:url(https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736_960_720.jpg);
+				background-size:cover;
+			}
+			#areaContas {
+				width:400px;
+				border:2px solid navy;
+				border-radius:20%;
+				background-color: rgba(255,255,255,0.60);
+				margin:20px auto;
+				padding:30px;
+			}
+		</style>
+		<script>
+			function Calcular()
+			{
+				// IMC = P / (A*A)
+				var peso	= document.getElementById("peso").value
+				var altura 	= document.getElementById("altura").value
+				
+				var imcCalculado = peso / (altura * altura)
+				//alert(imcCalculado)
+				
+				var oIMC = document.getElementById("IMC")
+				oIMC.value = imcCalculado.toFixed(2)
+				
+				var oSituacao = document.getElementById("situacao")
+				
+				
+				if (imcCalculado < 18.5) { oSituacao.innerHTML = "Magreza"}
+				
+				if ( (imcCalculado>=18.5) && (imcCalculado<25) )
+				{
+					oSituacao.innerHTML = "Normal"
+				}
+				
+				if ( (imcCalculado>=25) && (imcCalculado<30) )
+				{
+					oSituacao.innerHTML = "Sobrepeso"
+				}
+				
+				if ( (imcCalculado>=30) && (imcCalculado<40) )
+				{
+					oSituacao.innerHTML = "Obesidade"
+				}
+				
+				if ( imcCalculado>=40 )
+				{
+					oSituacao.innerHTML = "Obesidade Grave"
+				}	
+			}
+		</script>
+	</head>
+	<body>
+		<div id="areaContas">
+			<h1>CÁLCULO DO IMC</h1>
+			<label>Peso (Kgs):</label>
+			<input type="number" id="peso" placeholder="72,50"> <br>
+			
+			<label>Altura (Mts):</label>
+			<input type="number" id="altura" placeholder="1,66"> <br>
+			
+			<input type="button" value="CALCULAR" onclick="Calcular()">
+			
+			<hr>
+			<label>IMC:</label>
+			<input type="text" id="IMC" readonly> <br>
+			<label>Situação:</label>
+			<p id="situacao"></p>
+		</div>
+	</body>
+</html> -->
+
+
+

@@ -1,0 +1,68 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+body{
+    margin: 0 auto;
+}
+.corpo{
+    background: linear-gradient(rgb(0, 255, 34),rgb(0, 49, 11) );
+    width:250px;
+    height:270px;
+    border: ridge 5px;
+    border-radius:10px;
+    border-color: rgb(124, 124, 128);
+    padding: 10px 10px 70px 10px;
+    color: white;
+    box-shadow: 20px 20px 20px rgba(10, 82, 1, 0.678);
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-top: 60px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+hr{
+    width: 200px;
+}
+.entrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align:right;
+}
+.radius{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:200px;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.botao{
+    margin-top: 20px;
+    border-color: rgb(69, 196, 69);
+    border-radius:10px;
+    box-shadow: 5px 5px 5px rgb(15, 59, 22); 
+}
+.res{
+    /* background-color:rgb(255, 255, 255);
+    border-radius:5px;
+    margin:5px 0 5px 5px;
+    text-align:right;
+    color: rgb(5, 255, 5); */
+    margin:10px 0 10px;
+    /* width: 60px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(6, 37, 6);  */
+}
+   
+     

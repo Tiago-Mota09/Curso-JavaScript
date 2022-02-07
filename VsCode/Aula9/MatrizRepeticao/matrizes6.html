@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+	<title>Busca na matriz</title>
+ 	<meta charset="utf-8">
+   </head>
+
+   <body>
+      <h2>Classificação Final Fórmula 1 - 2019</h2>
+      <script>
+      pilotos = ["1) Lewis Hamilton [413]"  , 
+	     "2) Valtteri Bottas [326]" ,
+	     "3) Max Verstappen [278]"  ,
+	     "4) Charles Leclerc [264]" ,
+	     "5) Sebastian Vettel [240]",
+	     "6) Carlos Sainz Jr. [96]" ,
+	     "7) Pierre Gasly [95]"     ,
+ 	     "8) Alexander Albon [92]"  ,  
+	     "9) Daniel Ricciardo [54]" ,
+	     "10) Sergio Pérez [52]"    ,
+	     "11) Lando Norris [49]"    ,
+ 	     "12) Kimi Räikkönen [43]"  ,  
+	     "13) Daniil Kvyat [37]"    ,
+	     "14) Nico Hülkenberg [37]" ,
+	     "15) Lance Stroll [21]"    ,
+	     "16) Kevin Magnussen [20]" , 
+	     "17) A.Giovinazzi [14]"    ,
+	     "18) Romain Grosjean [8]"  ,
+ 	     "19) Robert Kubica [1]"    ,
+	     "20) George Russell [0]"]
+
+  var nomeBuscar = prompt("Informe parte do nome de um piloto a ser procurado:")
+
+  if (nomeBuscar !="") {
+     // deixando o nome informado em maiúsculo
+     nomeBuscar = nomeBuscar.toUpperCase() 
+
+     var encontrou = false
+
+     for (var n=0 ; n < pilotos.length ; n++) {
+         // pegando o nome do piloto da matriz e deixando maiúsculo
+
+         var nomePiloto = pilotos[n].toUpperCase() 
+
+         if(nomePiloto.includes(nomeBuscar) ) { 
+	    // achou
+  	    document.write(pilotos[n])
+	    encontrou = true
+	    break // cai fora do loop
+         }
+      }
+  }
+
+  if(! encontrou ) {
+      document.write("Nome de piloto não encontrado!")
+  }
+  </script>
+</body>
+</html>

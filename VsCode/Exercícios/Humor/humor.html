@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- salvar como avatar.html -->
+<html lang="pt-br">
+   <head>
+	<title>Humor</title>
+ 	<meta charset="utf-8">
+ 	<script src="humor.js"></script>
+	 <style>
+	  p { 
+		  	color  : rgb(255, 0, 0) ;
+			font-size: 40px;
+			text-align: center;}
+		fieldset{
+			width: 550px;
+			margin: auto;
+			border-radius:10px;
+		}
+		legend {
+       	 	padding: 50px 0;
+        	font-size: 30px;
+			color: blue;
+      	}
+		.imgG{
+			margin: 50px 0 0 160px;
+		}
+	</style>
+</head>
+   <body>
+		 <div class="tudo">
+			 
+<fieldset class="field"><legend>Qual seu humor hoje?</legend>
+	<img src="imgs/assustado.png" title="Hoje você está assustado!" onmouseover="Humor(this.title, 'assustado.png')">
+	<img src="imgs/entediado.png" title="Hoje você  está entediado!" onmouseover="Humor(this.title, 'entediado.png')">
+	<img src="imgs/feliz.png" title="Hoje você  está feliz!" onmouseover="Humor(this.title, 'feliz.png')">
+	<img src="imgs/irritado.png" title="Hoje você  está irritado!" onmouseover="Humor(this.title, 'irritado.png')">
+	<img src="imgs/nostalgico.png" title="Hoje você  está nostálgico!" onmouseover="Humor(this.title, 'nostalgico.png')">
+	
+	<hr>
+	<img src="imgs/assustado.png" id="imgG" width="200px" class="imgG">
+	<p id="nomeG">Hoje você está assustado</p>
+</fieldset>
+</div>
+	</body>
+</html> 
+

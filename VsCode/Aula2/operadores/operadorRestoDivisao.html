@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+    	<meta charset="utf-8">
+	<title>Operador Aritmético – Resto de Divisão inteira</title>
+   </head>
+   <body>
+	<script>
+		var divida = 18790
+		var valorParcela= 1250
+		var numParcelas= parseInt( divida / valorParcela )//para converter para número inteiro ou toFixed(0)
+		var saldo = divida % valorParcela
+ 
+		document.write(	"Você deverá pagar " + numParcelas + 
+			 " parcelas de " + valorParcela.toFixed(2) + 
+			 " e haverá uma sobra de " + saldo.toFixed(2) )
+	 </script>
+   </body>
+</html>

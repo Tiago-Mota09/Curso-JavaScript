@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evento</title>
+    <script src="ExEvento.js"></script>
+    <link rel="stylesheet" href="ExEvento.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href= "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Slabo+13px&family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="corpo">
+        <h1>Estimativa de Custos de Evento</h1>
+        <label for=" Pessoal:">Pessoal:</label>
+        <input type="number" id="pes" min="0" maxlength="2" value="" class="pes"><br>
+        <label for=" Comidas:">Comidas:</label>
+        <input type="number" id="com" min="0" maxlength="2" value="" class="com"><br> 
+        <label for=" Bebidas:">Bebidas:</label>
+        <input type="number" id="beb" min="0" maxlength="2" value="" class="beb"><br> 
+        <label for=" Locação:">Locação:</label>
+        <input type="number" id="loc" min="0" maxlength="2" value="" class="loc"><br> 
+        <label for=" Outros:">Outros:</label>
+        <input type="number" id="out" min="0" maxlength="2" value="" class="out">
+
+        <input type="button" value="Calcular" onclick="Calcular()" class="calc"><br>
+
+        <hr> Custo Total: <input type="number" id="custTotal" class="total" readonly>
+    </div>
+</body>
+
+</html>

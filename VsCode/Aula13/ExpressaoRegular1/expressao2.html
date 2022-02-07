@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- salvar como expressao2.html -->
+<html lang="pt-br">
+	<head>
+		<title>Validação campo CEP 2 - JavaScript</title>
+		<meta charset="utf-8">
+		<script src="cep.js"></script>
+		<style>
+			#CEP:invalid {border: 1px solid red;background-color:pink;} /*invalid = pseudo classe*/
+			#CEP:valid {border: 1px solid green;background-color:white;} /*valid = pseudo classe*/
+		</style>
+	</head>
+	<body>
+		<form>
+			Informe um CEP:
+			<input 	type="text" 
+					name="CEP" 
+					id="CEP" 
+					placeholder="99999-999"
+					size="9"
+					maxlength="9">
+			<br>
+			<input 	type="button" value="Validar"
+					onclick="validaCEP(CEP)">
+		</form>
+	</body>
+</html>

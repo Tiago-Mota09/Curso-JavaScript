@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+	<title>DOM e Área de Texto</title>
+ 	<meta charset="utf-8">
+   <script src="Dom-p4.js"></script>
+   <style>#contagem{background-color: pink;};</style>
+</head>
+   <body>
+	Observações: <br>
+	<textarea
+    onkeyup="Tamanho(this)"
+    placeholder="Máximo 200 caracterers"
+    cols="50" 
+	  rows="5">
+  </textarea>
+	<hr>
+	Restam: [<span id="contagem"> 200</span>] caracteres
+   </body>
+</html>

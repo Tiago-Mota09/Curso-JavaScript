@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- salvar como matriz1.html -->
+<html lang="pt-br">
+   <head>
+		<title>Matrizes - Folha de Pagamento</title>
+		<meta charset="utf-8">
+		<script src="matriz.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+
+	</head>
+	<body>
+		<div id="dados">
+			<h1>Folha de Pagamento</h1>
+			<h2>Funcionário</h2>
+			Informe os dados a seguir:<br>
+			
+			Nome: <input type="text" id="nome" maxlengt="80"> <br>
+			Salário: <input type="text" id="salario"> <br>
+			Cargo: <input type="text" id="cargo"> <br>
+			Setor:
+			<select id="setores">
+				<option>Administração</option>
+				<option>Comercial</option>
+				<option>Contabilidade</option>
+				<option>Pessoal/RH</option>
+				<option>TI/Sistemas</option>
+			</select>
+			<hr>
+					<input 	type="button" 
+					value="Inserir na Folha"
+					onclick="InserirFolha(nome.value, salario.value,setores.value,cargo.value)"
+					class="botao">
+		</div>
+		<div id="areaFolha">
+			Funcionários: <span id="areaTotFuncs"></span>
+			Total da Folha: <span id="areaTotFolha"></span>
+		</div>
+	</body>
+</html>

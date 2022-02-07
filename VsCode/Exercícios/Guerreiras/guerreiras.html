@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Guerreira</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="guerreiras.css">
+		<!-- Coloquem o javascript no arquivo abaixo -->
+		<script src="guerreiras.js"></script>
+	</head>
+	<body>
+		<div class="menuEsq">
+			<div class="menu">
+				<h2>A Guerreira Protetora</h2>
+				Anos após a 3&ordf; Guerra Mundial, o mundo tornou-se um cenário apocalíptico, 
+				onde criaturas místicas como Trolls, Orcs, Elfos e Bruxas habitam
+				uma Terra devastada.<br>
+				
+				Mutações transformaram muitos humanos em monstros.<br>
+				Somente os mais fortes sobrevivem, num mundo dominado por <b><i>Lordes das Trevas</i></b> que
+				cobram impostos pesados e transformam os mais fracos em escravos, a maioria 
+				forçada a defender a vida nas <b>Arenas Mortais</b>.<br> 
+				
+				Não é sábio andar sozinho (a) pelas ruas. <br>
+				Uma classe de guerreiras surgiu, oferecendo conduzir seus protegidos para o último local seguro para humanos.<br>
+				Seus serviços de proteção são muito conhecidos e cada guerreira tem uma habilidade que a caracteriza.<br>
+				<hr>
+				Escolha (clique) a guerreira que irá te proteger durante o seu percurso para o <b>Paraíso na Terra.</b>
+				<p class="opcaoGuerreira" title="A Amazona Guerreira" class="avatares"  onclick=" TrocarImagem(this.title , 'amazona.png')">A Amazona Guerreira</p>
+				<p class="opcaoGuerreira" title="Arlequina" class="avatares" onclick=" TrocarImagem(this.title , 'arlequina.png')">Arlequina</p>
+				<p class="opcaoGuerreira" title="Arqueira" class="avatares" onclick="TrocarImagem(this.title , 'arqueira.png')">Arqueira</p>
+				<p class="opcaoGuerreira" title="Bruxa Dourada" class="avatares" onclick="TrocarImagem(this.title , 'bruxa.png')">Bruxa Dourada</p>
+				<p class="opcaoGuerreira" title="Deusa da Luz" class="avatares" onclick="TrocarImagem(this.title , 'deusa.png')">Deusa da Luz</p>
+				<p class="opcaoGuerreira" title="A Mestra das Espadas" class="avatares" onclick="TrocarImagem(this.title , 'espadachim.png')">A Mestra das Espadas</p>
+				<p class="opcaoGuerreira" title="Samurai Warrior" class="avatares" onclick="TrocarImagem(this.title , 'samurai.png')">Samurai Warrior</p>
+				<p class="opcaoGuerreira" title="A Orc Feroz" class="avatares" onclick="TrocarImagem(this.title , 'orc.png')">A Orca Feroz</p>
+				<p class="opcaoGuerreira" title="Pantera Negra" class="avatares" onclick="TrocarImagem(this.title , 'panteraNegra.png')">Pantera Negra</p>
+				<p class="opcaoGuerreira" title="Troll" class="avatares" onclick="TrocarImagem(this.title , 'troll.png')">A Troll do Bem</p>
+			</div>
+		</div>
+		<div class="principal">
+		
+		<div class="superior">
+			<h1>Escolha sua personagem</h1>
+			<div class="superiorimg">
+			<img src="imgs/amazona.png"  title="A Amazona Guerreira" class="avatares"  onclick=" TrocarImagem(this.title , 'amazona.png', 'fundo.jpg')"> <br>
+			<img src="imgs/arlequina.png"  title="Arlequina" class="avatares" onclick=" TrocarImagem(this.title , 'arlequina.png', 'fundo2.jpg')"><br>
+			<img src="imgs/arqueira.png"  title="Arqueira" class="avatares" onclick="TrocarImagem(this.title , 'arqueira.png', 'fundo3.jpg')"><br>
+			<img src="imgs/bruxa.png"  title="Bruxa Dourada" class="avatares" onclick="TrocarImagem(this.title , 'bruxa.png', 'fundo4.jpg')"><br>
+			<img src="imgs/deusa.png"  title="Deusa da Luz" class="avatares" onclick="TrocarImagem(this.title , 'deusa.png', 'fundo5.jpg')"><br>
+			<img src="imgs/espadachim.png"  title="A Mestra das Espadas" class="avatares" onclick="TrocarImagem(this.title , 'espadachim.png', 'fundo6.jpg')"><br>
+			<img src="imgs/samurai.png"  title="Samurai Warrior" class="avatares" onclick="TrocarImagem(this.title , 'samurai.png', 'fundo7.jpg')"><br>
+			<img src="imgs/orc.png"  title="A Orc Feroz" class="avatares" onclick="TrocarImagem(this.title , 'orc.png', 'fundo8.jpg')"><br>
+			<img src="imgs/panteraNegra.png"  title="Pantera Negra" class="avatares" onclick="TrocarImagem(this.title , 'panteraNegra.png', 'fundo9.jpg')"><br>
+			<img src="imgs/troll.png"  title="A Troll do Bem" class="avatares" onclick="TrocarImagem(this.title , 'troll.png', 'fundo10.jpg')"><br>
+			</div>
+		</div>
+
+		<div class="guerreira">
+			<span id="nomeGuerreira">A Amazona Guerreira</span><br>
+			<img src="imgs/amazona.png" id="imgGuerreira" height="600" width="450"><br>
+		</div>
+		<div class="fundo">
+			<img src="imgs/fundo1.jpg" id="imgFundo"><br>
+		</div>
+	</div>
+	
+	</body>
+</html>

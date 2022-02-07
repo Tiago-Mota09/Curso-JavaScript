@@ -1,0 +1,178 @@
+<!DOCTYPE html> <!-- salvar como datas1.html -->
+<html lang="pt-br">
+	<head>
+		<title>Manipulação de datas em JavaScript</title>
+		<meta charset="utf-8">
+       	<script src="../datas.js"></script>
+	</head>
+	<body>
+		<script>
+     document.write ("=================================================================================================================")    
+
+     document.write ("<br>================Mostar a Data e Hora=========================================================================")    
+		 var hoje= new Date() ; MostraData (hoje)// ; para se colocar duas coisas na mesma linha
+		 var fimAnoUTC = new Date("2021-12-31T15:36:44.56Z")//z representa o padrão UTC e calcula o fuso-horário
+		 MostraData (fimAnoUTC)
+
+		 var fimAnoBrasl = new Date("2021-12-31T15:36:44.56-03:00")// sem o Z para não calcular o fuso-horário
+		 MostraData (fimAnoBrasl)
+     document.write ("=================================================================================================================")    
+
+     document.write ("<br>================Retornos Datas===============================================================================")   
+     var hoje= new Date() 
+		 MostraData (hoje)
+
+		 MostraData (hoje.getDate())//getDate = data
+
+		 MostraData (hoje.getDay())//getDay = dia da semana de 0(Dom) a 6(Sab)
+		
+		 MostraData (hoje.getMonth())//getMonth = mês, sendo janeiro o mês 0
+
+		 MostraData (hoje.getYear())//getYear = ano (não recomendadao)
+
+		 MostraData (hoje.getFullYear())//getFullYear = ano
+     document.write ("=================================================================================================================")    
+
+     document.write ("<br>================Retornos Minutos=============================================================================")    
+      var hoje= new Date() 
+		  MostraData (hoje)
+
+	    MostraData (hoje.getHours())//traz as horas
+
+	    MostraData (hoje.getMinutes())//traz os minutos
+
+	    MostraData (hoje.getSeconds())//traz os segundos
+
+	    MostraData (hoje.getMilliseconds())//traz os milisegundos
+      document.write ("=================================================================================================================")    
+
+      document.write ("<br>================Retornos Minutos e milissegundos=============================================================")    
+      var hoje= new Date() 
+		  MostraData (hoje)
+
+		  MostraData (hoje.getTime())//getTime = hora com milissegundos a partir do click
+
+		  MostraData (hoje.getTimezoneOffset())//getTimezoneOffset = diferença de fuso- horario da UTC em minutos
+
+		  MostraData (Date.parse("2021-12-25T00:00:00-03:00"))//Date.parse = numero de milisegundo até a data informada desde de 1/1/70
+
+		  MostraData (Date.now())//Date.now = número de milissegundos a partir de () (OUTRA FORMA)
+      document.write ("=================================================================================================================")    
+
+      document.write ("<br>================Mudanças de Data/Dia=========================================================================")    
+      
+      var data = new Date("April 18, 2021 18:00:00 -03:00") 
+		  MostraData (data)
+
+	    data.setDate(1)// mudou a data para o 1º dia do mês
+
+	    MostraData ("1 = " + data)
+
+	    // vai mudar a data para o último dia do mês anterior
+	    data.setDate(0) 
+
+	    MostraData ("0 = " + data)
+
+	    // vai mudar a data para 40 dias a partir da data atual
+	    data.setDate(40)// verifica que a data está fora do padrão, avançando para o mês seguinte
+
+	    MostraData ("40 = " + data)
+      document.write ("=================================================================================================================")    
+
+      document.write ("<br>================Mudanças de Data/Mês=========================================================================")    
+
+      var data = new Date()
+	    MostraData (data)
+
+	    data.setMonth(0) // mudou o mês para o 1º do ano
+
+	    MostraData ("0 = " + data)
+
+	    // vai mudar a data para o último dia do mês anterior
+	    data.setMonth(11 , 24) // mudou p/24 de dezembro (11)
+
+	    MostraData ("11 = " + data)
+
+	    // vai mudar para o 3o mês após o mês atual (11/dezembro) 
+	    // => 11+3 = 14
+
+	    data.setMonth(14)
+
+	    MostraData ("14 = " + data)
+      document.write ("=================================================================================================================")    
+            
+      document.write ("<br>================Mudança de ANO===============================================================================")    
+      var data = new Date()
+		  MostraData (data)
+
+	    data.setFullYear(2022) // mudou o mês para o 1o do ano
+
+	    MostraData ("2022  = " + data)
+
+	    // vai mudar a data para o último dia do mês anterior
+	    data.setFullYear(-1) // mudou p/o ano 1 antes de Cristo
+
+	    MostraData ("-1 = " + data)
+      document.write ("=================================================================================================================")    
+
+      document.write ("<br>================Mudança de HORAS=============================================================================")    
+      var data = new Date()
+	    MostraData (data)
+
+	    data.setHours(23) // mudou para as 23 horas
+	    MostraData ("23  = " + data)
+
+	    data = new Date() // peguei de novo a data/hora atual
+	    data.setHours(25) // mudou o mês para a 1ª hora do dia seguinte
+      MostraData ("25  = " + data)
+
+	    data = new Date() // peguei de novo a data/hora atual
+	    data.setHours(0,0,0) // mudou para as 0 horas, 0 min., 0 segs
+	    MostraData ("0,0,0  = " + data)
+      document.write ("=================================================================================================================")    
+
+      document.write ("<br>================ Data no formato local=======================================================================")    
+      var hoje= new Date()
+      // Trará a data no formato local.
+      // Exemplo Brasil: DD/MM/YYYY
+      MostraData (hoje.toLocaleDateString())
+      document.write ("=================================================================================================================")    
+
+      document.write ("===================== Data e Hora no formato local===============================================================")    
+      var hoje= new Date()
+      // Trará a data no formato local.
+      // Exemplo Brasil: DD/MM/YYYY HH:MM
+      MostraData (hoje.toLocaleString())
+      document.write ("=================================================================================================================")    
+
+      document.write ("=====================Hora no formato local=============================================================================")
+      var hoje= new Date()
+		  // Trará a data no formato local.
+		  // Exemplo Brasil: DD/MM/YYYY HH:MM
+		  MostraData (hoje.toLocaleTimeString())
+      document.write ("=================================================================================================================")    
+
+      document.write ("=====================Comparar====================================================================================")
+      var data1 = new Date(2021,0,1) // retorna o número de milissegundos a partir da 0h de 01/01/1970
+		  var tempo1 = data1.getTime()
+		  MostraData (data1)
+
+		  var data2 = new Date(2021,0,2)
+		  MostraData (data2)
+		  var tempo2 = data2.getTime()
+
+		  // diferença de tempo entre as datas pode ser usado para saber qual é a data anterior
+		  if(tempo1 > tempo2) { document.write(data1.toLocaleDateString() +" é maior que " + data2.toLocaleDateString() + "<br>" )}
+
+		  if(tempo1 < tempo2) { document.write(data1.toLocaleDateString() +" é menor que " + data2.toLocaleDateString() + "<br>")}
+      MostraData ("Tempo 1 em milissegundos: " + tempo1)
+		  MostraData ("Tempo 2 em milissegundos: " + tempo2)
+      document.write ("=================================================================================================================")    
+
+      document.write ("=====================Informar Data===============================================================================")
+      var data = new Date("09/05/2022")
+	    MostraData (data)
+      
+</script>
+	</body>
+</html>

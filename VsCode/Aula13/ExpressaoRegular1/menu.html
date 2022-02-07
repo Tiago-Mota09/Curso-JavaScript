@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- salvar como menu.html -->
+<html lang="pt-br">
+	<head>
+		<title>Exemplo de menu</title>
+		<style>
+			body{
+				background:url(https://cdn.pixabay.com/photo/2014/10/14/20/24/soccer-488700_1280.jpg);
+				background-size:cover;
+				font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; 
+				font-size: 24px; 
+				text-align: center;
+			}
+			#menu { 
+				list-style:none;
+				background-color:rgba(0,0,0,0.5);
+				padding-left:0px;
+				text-align:center;
+				width:1200px;
+				height:300px;
+				margin:auto;
+				border:2px groove white;
+				padding-top:20px;
+			}
+			#menu li {
+				border:1px solid black;
+				width:250px;
+				height:250px;
+				display:inline-block;
+				margin-right:10px;
+				background-color:rgba(255,255,255,0.7);
+			}
+			#menu a{
+				text-decoration:none;
+				width:250px;
+				height:230px;
+				float:left;
+				padding-top:20px;
+				
+				background-size:80%;
+				background-repeat:no-repeat;
+				background-position:center 50px;
+			}
+			#menu a:link{
+				color:navy;
+			}
+			#menu a:visited{
+				color:black;
+			}
+			#menu a:hover{
+				background-color:yellow;
+			}
+			#menu a:active{
+				background-color:black;
+				color:yellow;
+			}
+			#c {
+				background:url(https://logodetimes.com/times/corinthians/logo-corinthians-256.png);
+			}
+			#p {
+				background:url(https://logodetimes.com/times/palmeiras/logo-palmeiras-256.png);
+			}
+			#sp {
+				background:url(https://logodetimes.com/times/sao-paulo/logo-sao-paulo-256.png);
+			}
+			#s {
+				background:url(https://logodetimes.com/times/santos/logo-santos-256.png);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Times de São Paulo</h1>
+		<ul id="menu">
+			<li> <a id="c"  target="_blank" href="https://www.corinthians.com.br/">Corinthians</a> </li>
+			<li> <a id="p"  target="_blank" href="https://www.palmeiras.com.br/pt-br/">Palmeiras</a> </li>
+			<li> <a id="sp" target="_blank" href="http://www.saopaulofc.net/">São Paulo</a> </li>
+			<li> <a id="s"  target="_blank" href="https://www.santosfc.com.br/">Santos</a> </li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- salvar como string1.html -->
+<html lang="pt-br">
+	<head>
+		<title>Manipulação de Strings - JavaScript</title>
+		<meta charset="utf-8">
+		<script>
+			function posString(str, posicao){
+        posicao -= 1 //equivale a posicao = posicao -1
+				if(posicao>=str.length)
+					alert("A posição informada é maior que o tamanho da String")
+				else
+				   alert("O caractere na posição informada é " + str.charAt(posicao))
+			}
+		</script>
+	</head>
+	<body>
+		Informe um texto:
+		<input 	type="text" 
+				name="texto" 
+				id="texto"> <br>
+		Informe a posição desejada da String: <br>
+		<input 	type="number" min="0" id="pos"> <br>
+		
+		<input 	type="button" 
+				value="Localizar" 
+				onclick="posString(texto.value, pos.value)">
+				
+		<br>
+	</body>
+</html>

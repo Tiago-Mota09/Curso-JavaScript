@@ -1,0 +1,20 @@
+<!DOCTYPE html><!-- salvar como datas7.html -->
+<html lang="pt-br">
+	<head>
+		<title>Manipulação de datas em JavaScript</title>
+		<meta charset="utf-8">
+		<script src="../datas.js"></script>
+	</head>
+	<body>
+	<script>
+
+	var hoje = new Date()
+	document.write("Hoje é " + hoje.toLocaleDateString() + "<br>")
+
+	var dias = 30
+
+	document.write("Trinta dias atrás foi " + SubtraiDias(hoje, dias).toLocaleDateString() )
+
+	</script>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+body{
+   background: url(https://cdn.pixabay.com/photo/2014/07/09/12/17/live-concert-388160_960_720.jpg);
+   background-size:cover;
+   margin-top: 200px;
+}
+.corpo{
+    /* font-family: Dancing Script; */
+    background: linear-gradient(rgb(4, 0, 255),rgb(3, 0 , 49) );
+    width:540px;
+    height:305px;
+    border: ridge 5px;
+    border-radius:10px;
+    border-color: rgb(124, 124, 128);
+    padding: 10px 10px 70px 10px;
+    color: white;
+    box-shadow: 20px 20px 20px rgba(1, 19, 82, 0.678);
+    margin:auto;
+}
+h1{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+    .pes{
+        background-color:silver;
+        border-radius:5px;
+        margin:10px 0 5px 32px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+    }
+    .com{
+        background-color:silver;
+        border-radius:5px;
+        margin:10px 0 5px 26px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+
+    }
+    .beb{
+        background-color:silver;
+        border-radius:5px;
+        margin:10px 0 5px 32px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+
+    }
+    .loc{
+        background-color:silver;
+        border-radius:5px;
+        margin:10px 0 5px 30px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+
+    }
+    .out{
+        background-color:silver;
+        border-radius:5px;
+        margin:10px 0 5px 42px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+
+    }
+    .total{
+        background-color:silver;
+        border-radius:5px;
+        margin:5px 0 5px 10px;
+        text-align:right;
+        color: rgb(5, 5, 255);
+        width:300px
+
+    }
+    .calc {
+        margin-left: 55px;
+        border-radius:10px;
+        box-shadow: 5px 5px 5px rgb(18, 15, 59); 
+    }
+    hr{
+        margin: 20px 0 20px;
+    }
+    
+   
+   

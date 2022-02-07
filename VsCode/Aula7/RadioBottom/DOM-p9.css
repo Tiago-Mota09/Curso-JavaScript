@@ -1,0 +1,14 @@
+/* salvar como DOM-p9.css */
+#areaHDI { 
+  background-color:lightblue; 
+}
+#areaHDE { 
+  background-color:plum ;
+}
+#areaSSD { 
+  background-color: pink ;
+}
+
+#areaHDE, #areaSSD { 
+  display:none;
+}

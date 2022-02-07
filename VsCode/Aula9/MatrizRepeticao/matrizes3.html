@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>População de Matrizes 2</title>
+	</head>
+
+	<body>
+		<h2>Salários do Setor</h2>
+
+		<script>
+			var salarios= Array() // Matriz vazia
+			var totalFolha = 0
+
+			salarios[0]= 1980.25
+			salarios[1]= 2887.20
+			salarios[2]= 5980.90
+			for (var n=0 ; n < salarios.length ; n++) {
+			   totalFolha += salarios[n] // acumula os salários na variável
+			   document.write(salarios[n].toFixed(2) + "<br>")
+			}
+			document.write("Total da Folha do Setor é " + totalFolha.toFixed(2))
+		</script>
+	</body>
+</html>
